@@ -1,0 +1,16 @@
+```
+--- HNSW with Dynamic Updates Demo ---
+-> Inserting 100 random vectors...
+..... Done.
+
+-> Querying nearest neighbors to [50, 50] (k=3)...
+   Results: [(24, 4.7930627), (98, 8.940865), (27, 13.016648)]
+
+-> Deleting top result Node 24...
+  [Repair] Deleting Node 24 and rewiring neighbors...
+-> Re-querying [50, 50] (k=3)...
+   Results: [(98, 8.940865), (27, 13.016648), (7, 13.328589)]
+
+[SUCCESS] Deleted node is gone, and graph is still navigable (found neighbors).
+          The repair mechanism successfully re-routed paths.
+```
